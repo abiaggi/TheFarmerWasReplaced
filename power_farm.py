@@ -6,9 +6,8 @@ while True:
 	for x in range(get_world_size()):
 		for y in range(get_world_size()):
 			move_to_pos(x,y)
-			if get_water() < .5:
-				use_item(Items.Water_Tank)
 			plant(Entities.Sunflower)
 			use_item(Items.Fertilizer)
+			use_item(Items.Water_Tank)
 	move_to_start()
 	harvest()
